@@ -1,25 +1,91 @@
-.jumbotron {
-  padding: 6rem;
-  background-color: rgb(253, 165, 92);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+:root {
+  --bg: #222;
+}
+
+.jumbotron {
+  padding: 10rem;
+  background-color: rgb(253, 165, 92);
+  opacity: 0.8;
+  filter: alpha(opacity=60);
+}
+.nama {
+  color: white;
+}
+.lead small {
+  color: rgb(241, 241, 241);
+}
+
 strong {
+  color: rgb(34, 170, 233);
+  text-shadow: 3px 2px 1px gray;
+}
+.display-4 {
   color: rgb(241, 241, 241);
 }
 h1 {
   font-family: serif;
 }
-#about {
+#about #contact {
   background-color: rgb(233, 245, 206);
 }
 #projects {
   background-color: rgb(253, 165, 92);
-}
-#contact {
-  background-color: rgb(233, 245, 206);
 }
 footer {
   background-color: rgb(247, 129, 34);
 }
 section {
   padding-top: 5rem;
+}
+.instagram:hover a {
+  filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 30px var(--clr)) drop-shadow(0 0 50px var(--clr));
+  cursor: pointer;
+}
+.fb:hover a {
+  filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 30px var(--clr)) drop-shadow(0 0 50px var(--clr));
+  cursor: pointer;
+}
+.wa:hover a {
+  filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 30px var(--clr)) drop-shadow(0 0 50px var(--clr));
+  cursor: pointer;
+}
+ul li {
+  list-style: none;
+  position: relative;
+  display: flex;
+  gap: 50px;
+}
+.instagram a {
+  color: var(--clr);
+  transition: 0.5s;
+  text-decoration: none;
+  font-size: 2em;
+  justify-content: center;
+  position: relative;
+}
+.fb a {
+  color: var(--clr);
+  transition: 0.5s;
+  text-decoration: none;
+  font-size: 2em;
+  justify-content: center;
+  position: relative;
+}
+.wa a {
+  color: var(--clr);
+  transition: 0.5s;
+  text-decoration: none;
+  font-size: 2em;
+  justify-content: center;
+  position: relative;
+}
+
+.btn:hover {
+  background-color: blue;
+  font-size: 1.1em;
 }

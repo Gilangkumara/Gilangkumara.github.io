@@ -14,11 +14,36 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
     <title>MyFORTFOLIO | GilangKumara</title>
   </head>
   <body id="home">
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-lg fixed-top" style="background-color: rgb(247, 129, 34)">
+    <div class="nav-group-vertical fixed-top" role="group">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary ">
+  <div class="container-md">
+    <a class="navbar-brand" href="home">My Portfolio Website</a>
+  </div>
+</nav>
+
+<!-- nav -->
+<ul class="nav nav-pills nav-justified bg-info m-2">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Much longer nav link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Disabled</a>
+  </li>
+</ul>
+</div>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark shadow-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#home">Gilang Kumara</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,21 +66,21 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
 
     <!--Jumbotron-->
     <section class="jumbotron text-center">
-      <img src="img/pp.jpg" alt="gilang kumara" class="rounded-circle" />
-      <h1 class="display-4">Gilang Kumara</h1>
+      <img src="img/pp.jpg" alt="gilang kumara" class="rounded-circle img-thumbnail" />
+      <h1 class="display-4"><strong class="nama">Gilang Kumara</strong></h1>
       <p class="lead">Web Depelover | Java Develover</p>
-      <strong>Phone : 083874207956 || E-mail : Gilangkumara29@Gmail.com</strong>
+      <P class="kontak"> Phone : 083874207956 || E-mail : Gilangkumara29@Gmail.com</p>
     </section>
 
      <!-- About -->
-     <section id="about">
+     <div id="about">
       <div class="container">
         <div class="row text-center mb-2">
-          <div class="col">
+          <div class="col border-bottom">
           <p><h2>About Me</h2></p>
           </div>
         </div>
@@ -68,13 +93,59 @@
           </div>
         </div>
       </div>
+       <!-- modal -->
+       <div class="d-grid gap-2 col-2 mx-auto mb-3">
+       <button type="button" class="btn btn-primary justify-content-evenly" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        My Profil
+      </button>
+    </div>
+      
+      <!-- Modal -->
+      <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true fixed-top">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title justify-content-center" id="staticBackdropLabel">Profil</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-grey">
+              <div class="row justify-content-evenly fs-5 ">
+                <div class="col-md-6">
+                  <div class="row justify-content-center">
+                    <div class="col-5">
+                      <br> Nama 
+                      <br> Alamat 
+                      <br> Tempat, Tanggal Lahir
+                      <br> Jenis Kelamin 
+                      <br> Agama 
+                      <br> Status 
+                    </div>
+                    <div class="col-7">
+                      <br> : Gilang Kumara 
+                      <br> : Gunung Sindur Bogor 
+                      <br> : Pemalang, 29 September 1997
+                      <br> : Laki-Laki
+                      <br> : Islam 
+                      <br> : Menikah 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Projeks -->
    <section id="projects">
      <div class="container">
-       <div class="row text-center mb-3 justify-content-center">
-         <div class="col">
+       <div class="row text-center mb-2 justify-content-center">
+         <div class="col border-bottom">
           <h2>My Projects</h2>
          </div>
        </div>
@@ -110,49 +181,103 @@
    <!-- Contact -->
    <section id="contact">
      <div class="container">
-       <div class="row text-center">
-         <div class="col">
+       <div class="row text-center mb-2">
+         <div class="col border-bottom">
            <H2>Contact Me</H2>
          </div>
        </div>
-       <div class="row justify-content-center">
-        <div class="col-md-6 mb-3">
-          <div class="alert alert-success alert-dismissible fade show  my-alert d-none" role="alert">
-            <strong style="color: black;">Terimakasih</strong> 
-            <p>Pesan Anda Sudah Kami Terima</p>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
-          <form name="Form_Contact">
-            <div class="mb-3">
-              <label for="Name" class="form-label">Nama Lengkap</label>
-              <input type="text" class="form-control" id="Name" aria-describedby="name" name="nama">
+       <div class="row justify-content-center text-center border-bottom">
+        <div class="col">
+          <ul>
+            <li class="fb" style="--clr: #1872f2;">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                     <a href="https://www.facebook.com/profile.php?id=100053304669262">Legans</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col ">
+          <ul class="contact"> 
+             <li class=" instagram contact" style="--clr:#c32aa3;">
+                <a href="#"><i class="fa-brands fa-instagram"></i>
+                <a href="https://www.instagram.com/legans_06/">Legans_06</a>
+                </a>
+              </li> 
+          </ul>
+        </div>
+        <div class="col">
+         <ul>
+                  <li class="wa" style="--clr:#25d366">
+              <a href="#"><i class="fa-brands fa-whatsapp"></i>
+              <a href="https://wa.me/+6283140817909">alea.syafa</a>
+        
+        </a>
+              </li> 
+          </ul>
+        </div>
 
-            </div>
-            <div class="mb-3">
-              <label for="Email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
-              <div class="mb-3">
-                <label for="pesan" class="form-label">pesan</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+        <div class="row text-center mb-2 mt-5">
+          <div class="col">
+            <H2 class="border-bottom">Or</H2>
+          </div>
+        </div>
+        <div class="row text-center">
+        <div class="col">
+       <div class="d-grid gap-2 col-2 mx-auto mb-3">
+        <button class="btn btn-primary justify-content-evenly" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Send Message
+        </button>
+      </div>
+    </div>
+    </div>
+      
+
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <div class="row justify-content-center">
+            <div class="col-md-10 mb-3">
+              <div class="alert alert-success alert-dismissible fade show  my-alert d-none" role="alert">
+                <strong style="color: black;">Terimakasih</strong> 
+                <p>Pesan Anda Sudah Kami Terima</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
               </div>
+              <form name="Form_Contact">
+                <div class="mb-3">
+                  <label for="Name" class="form-label">Nama Lengkap</label>
+                  <input type="text" class="form-control" id="Name" aria-describedby="name" name="nama">
+    
+                </div>
+                <div class="mb-3">
+                  <label for="Email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
+                  <div class="mb-3">
+                    <label for="pesan" class="form-label">pesan</label>
+                    <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-kirim ">Kirim</button>
+                <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
+              </form>
             </div>
-            <button type="submit" class="btn btn-primary btn-kirim ">Kirim</button>
-            <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-              <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-              Loading...
-            </button>
-          </form>
+          </div>
         </div>
       </div>
      </div>
    </section>
 
+   
+
    <!-- Footer -->
    <footer class="text-white text-center pb-3 pt-2">
      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by  <a href="https://www.instagram.com/gilang_kumara29/" class="text-white fs-bold">Gilang Kumara</a></p>
    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbxxHsS7TS03gGun5AHLCmTWetciudEKqHs2-x1eSjStOm8tizZjawLBu8TUewKHc-0qKQ/exec'
       const form = document.forms['Form_Contact']
