@@ -28,8 +28,13 @@ strong {
 h1 {
   font-family: serif;
 }
+#contact {
+  padding-bottom: 5rem;
+}
+
 #about #contact {
   background-color: rgb(247, 247, 247);
+  padding-bottom: 5rem;
 }
 #education {
   background-color: rgb(253, 165, 92);
@@ -100,10 +105,4 @@ ul li {
 .nav-item a:hover {
   background-color: chocolate;
   color: black;
-}
-.nav-item::after {
-  background-color: chocolate;
-}
-.active {
-  background-color: rgb(47, 188, 243);
 }
