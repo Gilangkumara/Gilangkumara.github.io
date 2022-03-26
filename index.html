@@ -23,50 +23,26 @@
     <div class="nav-group-vertical fixed-top" role="group">
 <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
   <div class="container-md">
-    <a class="navbar-brand" href="home">My Portfolio Website</a>
+    <a class="navbar-brand" href="#home">My Portfolio Website</a>
   </div>
 </nav>
 
 <!-- nav -->
 <ul class="nav nav-pills nav-justified bg-info m-2">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
+    <a class="nav-link " aria-current="page" href="#home">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Much longer nav link</a>
+    <a class="nav-link" href="#about">About</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#projects">Projects</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled">Disabled</a>
+    <a class="nav-link " href="#contact" >Contact</a>
   </li>
 </ul>
 </div>
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark shadow-lg fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#home">Gilang Kumara</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
 
     <!--Jumbotron-->
     <section class="jumbotron text-center">
@@ -77,9 +53,10 @@
     </section>
 
      <!-- About -->
+     <section>
      <div id="about">
       <div class="container">
-        <div class="row text-center mb-2">
+        <div class="row text-center mb-2s">
           <div class="col border-bottom">
           <p><h2>About Me</h2></p>
           </div>
@@ -94,7 +71,7 @@
         </div>
       </div>
        <!-- modal -->
-       <div class="d-grid gap-2 col-2 mx-auto mb-3">
+       <div class="d-grid gap-2 col-2 mx-auto mb-5">
        <button type="button" class="btn btn-primary justify-content-evenly" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         My Profil
       </button>
@@ -140,6 +117,26 @@
         </div>
       </div>
     </section>
+
+    <!-- Education -->
+    <section>
+      <div id="education">
+       <div class="container">
+         <div class="row text-center mb-2s">
+           <div class="col border-bottom">
+           <p><h2>Education</h2></p>
+           </div>
+         </div>
+         <div class="row justify-content-evenly fs-5 text-center ">
+           <div class="col-md-8">
+             <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatum non recusandae eos, consequatur blanditiis dolorem quae ipsam quis incidunt nobis repudiandae exercitationem accusantium nostrum repellendus alias tenetur
+               iste minima aliquid rerum porro laboriosam et? Officiis totam repellendus ea ratione consectetur ipsum nihil culpa temporibus vel nobis facere, est dolor.
+             </p>
+           </div>
+         </div>
+       </div>
+      </section>
 
     <!-- Projeks -->
    <section id="projects">
@@ -191,7 +188,7 @@
           <ul>
             <li class="fb" style="--clr: #1872f2;">
               <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                     <a href="https://www.facebook.com/profile.php?id=100053304669262">Legans</a>
+                     <a href="https://web.facebook.com/gilang.psht.7/" terget='_blank'>Gilang Kumara</a>
             </li>
           </ul>
         </div>
@@ -199,7 +196,7 @@
           <ul class="contact"> 
              <li class=" instagram contact" style="--clr:#c32aa3;">
                 <a href="#"><i class="fa-brands fa-instagram"></i>
-                <a href="https://www.instagram.com/legans_06/">Legans_06</a>
+                <a href="https://www.instagram.com/gilang_kumara29/" terget="_blank">Gilang_Kumara29</a>
                 </a>
               </li> 
           </ul>
@@ -208,7 +205,7 @@
          <ul>
                   <li class="wa" style="--clr:#25d366">
               <a href="#"><i class="fa-brands fa-whatsapp"></i>
-              <a href="https://wa.me/+6283140817909">alea.syafa</a>
+              <a href="https://wa.me/+6283874204956" terget="_blank">Gilang Kumara</a>
         
         </a>
               </li> 
@@ -278,33 +275,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxxHsS7TS03gGun5AHLCmTWetciudEKqHs2-x1eSjStOm8tizZjawLBu8TUewKHc-0qKQ/exec'
-      const form = document.forms['Form_Contact']
-      const btnKirim = document.querySelector('.btn-kirim');
-      const btnLoading = document.querySelector('.btn-loading');
-      const myAlert = document.querySelector('.my-alert');
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        //ketika tombol submit di klik
-        //tampilkan tombol loading-hilangkan tombol kirim
-        btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
-
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            btnLoading.classList.toggle('d-none');
-            btnKirim.classList.toggle('d-none');
-            myAlert.classList.toggle('d-none');
-
-            form.reset();
-
-            console.log('Success!', response)
-          })
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
+    <script src="script.js"></script>
 
   </body>
 </html>

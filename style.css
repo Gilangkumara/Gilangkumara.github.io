@@ -24,17 +24,22 @@ strong {
   color: rgb(34, 170, 233);
   text-shadow: 3px 2px 1px gray;
 }
-.display-4 {
-  color: rgb(241, 241, 241);
-}
+
 h1 {
   font-family: serif;
 }
 #about #contact {
-  background-color: rgb(233, 245, 206);
+  background-color: rgb(247, 247, 247);
+}
+#education {
+  background-color: rgb(253, 165, 92);
+}
+#about {
+  padding-top: 7rem;
 }
 #projects {
-  background-color: rgb(253, 165, 92);
+  background-color: rgb(233, 245, 206);
+  padding-top: 7rem;
 }
 footer {
   background-color: rgb(247, 129, 34);
@@ -88,4 +93,17 @@ ul li {
 .btn:hover {
   background-color: blue;
   font-size: 1.1em;
+}
+.nav-item a {
+  color: white;
+}
+.nav-item a:hover {
+  background-color: chocolate;
+  color: black;
+}
+.nav-item::after {
+  background-color: chocolate;
+}
+.active {
+  background-color: rgb(47, 188, 243);
 }
