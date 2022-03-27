@@ -3,9 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root {
-  --bg: #222;
-}
 
 .jumbotron {
   padding: 10rem;
