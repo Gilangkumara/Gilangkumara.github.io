@@ -36,6 +36,9 @@
     <a class="nav-link" href="#about">About</a>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="#education">Educations</a>
+  </li>
+  <li class="nav-item">
     <a class="nav-link" href="#projects">Projects</a>
   </li>
   <li class="nav-item">
@@ -127,15 +130,184 @@
            <p><h2>Education</h2></p>
            </div>
          </div>
-         <div class="row justify-content-evenly fs-5 text-center ">
-           <div class="col-md-8">
-             <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatum non recusandae eos, consequatur blanditiis dolorem quae ipsam quis incidunt nobis repudiandae exercitationem accusantium nostrum repellendus alias tenetur
-               iste minima aliquid rerum porro laboriosam et? Officiis totam repellendus ea ratione consectetur ipsum nihil culpa temporibus vel nobis facere, est dolor.
-             </p>
+         <div class="row justify-content-start fs-5 ">
+           <div class="col">
+            <p><h3>Formal</h3></p>
+           </div>
+         </div>
+         <div class="row justify-content-center">
+           <div class="col">
+            <table class="table">
+              <thead>
+                <tr class="text-center">
+                  <th scope="col">#</th>
+                  <th scope="col">Sekolah</th>
+                  <th scope="col">Jurusan</th>
+                  <th scope="col">Tahun</th>
+                  <th scope="col">Jenjang</th>
+                  <th scope="col">Keterangan</th>
+                </tr>
+              </thead>
+              <tbody class="text-center">
+                <tr>
+                  <th scope="row">1</th>
+                  <td>SDN 07 Pulau-Pinang </td>
+                  <td> - </td>
+                  <td>2003 - 2009</td>
+                  <td>SD</td>
+                  <td>Lulus</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>SMPN 01 Pulau-Pinang</td>
+                  <td> - </td>
+                  <td>2009 - 2012</td>
+                  <td>SMP</td>
+                  <td>Lulus</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>SMAN 01 Pulau-Pinang</td>
+                  <td> IPA </td>
+                  <td>2012 - 2015</td>
+                  <td>SMA</td>
+                  <td>Lulus</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Universitas Indraprasta PGRI</td>
+                  <td> Teknik Informatika </td>
+                  <td>2017 - 2022</td>
+                  <td>Sastra Satu</td>
+                  <td>Lulus</td>
+                </tr>
+              </tbody>
+            </table>
+           </div>
+         </div>
+         <div class="row justify-content-start fs-5 ">
+           <div class="col">
+            <p><h3>Non Formal</h3></p>
+           </div>
+         </div>
+         <div class="row justify-content-center">
+           <div class="col">
+            <table class="table">
+              <thead>
+                <tr class="text-center">
+                  <th scope="col">#</th>
+                  <th scope="col">Seminar</th>
+                  <th scope="col">Penyelenggara</th>
+                  <th scope="col">Kota</th>
+                  <th scope="col">Tahun</th>
+                  <th scope="col">Aksi</th>
+                </tr>
+              </thead>
+              <tbody class="text-center">
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Ms. Office 2010</td>
+                  <td>PalComTech</td>
+                  <td>Lahat</td>
+                  <td>2013</td>
+                  <td>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#palcom">
+                      Sertifikat
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Pelatihan Kesehatan dan keselamatan kerja</td>
+                  <td>Rumkital Dr. Mintohardjo</td>
+                  <td>Jakarta</td>
+                  <td>2017</td>
+                  <td>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rsal">
+                      Sertifikat
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Laravel web development</td>
+                  <td> Sanbercode </td>
+                  <td>Bandung</td>
+                  <td>2022</td>
+                  <td>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sanbercode">
+                      Sertifikat
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
            </div>
          </div>
        </div>
+
+       <!-- modal sanbercode -->
+      <div class="modal fade" id="sanbercode" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Sertifikat Sanbercode</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <center>
+                  <img src="img/sanber1.jpg" alt="sanber1">
+                  <img src="img/sanber2.jpg" alt="sanber2">
+                </center>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- modal rsal -->
+      <div class="modal fade" id="rsal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Serifikat K3 RSAL Dr. Mintohardjo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <center>
+                <img src="img/rsal1.jpg" alt="rsal1">
+                <img src="img/rsal2.jpg" alt="rsal2">
+              </center>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- modal palcom -->
+      <div class="modal fade" id="palcom" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Sertifikat Ms.Office 2010</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <center>
+                <img src="img/office1.jpg" alt="office1" width="780px">
+              </center>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       </section>
 
     <!-- Projeks -->

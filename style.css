@@ -31,6 +31,9 @@ h1 {
 #contact {
   padding-bottom: 5rem;
 }
+#education {
+  padding: 5rem;
+}
 
 #about #contact {
   background-color: rgb(247, 247, 247);
