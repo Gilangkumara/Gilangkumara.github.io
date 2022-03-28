@@ -22,100 +22,98 @@
     <title>MyFORTFOLIO | GilangKumara</title>
   </head>
   <body id="home">
-    <!--Navbar-->
-    <div class="nav-group-vertical fixed-top" role="group">
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
-        <div class="container-md">
-          <a class="navbar-brand" href="#home">My Portfolio Website</a>
-        </div>
-      </nav>
-
-<!-- nav -->
-<ul class="nav nav-pills nav-justified bg-info m-2" data-aos="fade-down"
-data-aos-easing="linear"
-data-aos-duration="1500">
-  <li class="nav-item">
-    <a class="nav-link " aria-current="page" href="#home">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#about">About</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#education">Educations</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#projects">Projects</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link " href="#contact" >Contact</a>
-  </li>
-</ul>
-</div>
+    
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow p-3 fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Portfolio Website</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#education">Educations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#contact" >Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
     <!--Jumbotron-->
-    <section class="jumbotron text-center justify-content-evenly">
-      <img src="img/pp.jpg" alt="gilang kumara" class="rounded-circle img-thumbnail" data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1500" data-aos-delay="1000"/>
-      <h1 class="display-4" data-aos="flip-left"  data-aos-duration="3000"><strong class="nama" >Gilang Kumara</strong></h1>
-      <p class="lead" data-aos="fade-right" data-aos-delay="300" data-aos-duration="3000">Web Depelover | Java Develover</p>
-      <P class="kontak" data-aos="fade-left" data-aos-delay="400" data-aos-duration="3000"> Phone : 083874207956 || E-mail : Gilangkumara29@Gmail.com</p>
+    <section class="jumbotron transparant text-center justify-content-xl-center">
+      <img src="img/pp.jpg" alt="gilang kumara" class="rounded-circle img-thumbnail" width="200" data-aos="fade-down"
+       data-aos-easing="linear" data-aos-duration="1500" data-aos-delay="1000"/>
+        <h1 class="display-4" data-aos="flip-left"  data-aos-duration="3000"><strong class="nama" >Gilang Kumara</strong></h1>
+        <p class="lead" data-aos="fade-right" data-aos-delay="300" data-aos-duration="3000">Web Depelover | Java Develover</p>
+        <P class="kontak" data-aos="fade-left" data-aos-delay="400" data-aos-duration="3000"> Phone : 083874207956 || E-mail : Gilangkumara29@Gmail.com</p>
 
         <div class="d-grid gap-2 col-2 mx-auto mb-5" data-aos="fade-up" data-aos-delay="600" data-aos-duration="3000" data-aos-offset="0">
           <button type="button" class="btn btn-primary justify-content-evenly" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
            My Profil
-         </button>
+          </button>
        </div>
     </section>
 
      <!-- About -->
      <section>
-     <div id="about">
-      <div class="container">
-        <div class="row text-center mb-2s">
-          <div class="col-md border-bottom" data-aos="fade-down" data-aos-duration="3000">
-          <p><h2>About Me</h2></p>
+      <div id="about">
+        <div class="container">
+          <div class="row text-center mb-2s">
+            <div class="col-lg-12 border-bottom" data-aos="fade-down" data-aos-duration="3000">
+               <p><h2>About Me</h2></p>
+            </div>
           </div>
-        </div>
-        <div class="row justify-content-evenly fs-5 text-center ">
-          <div class="col-md-8" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
-            <p>
+          <div class="row justify-content-md-center fs-5 text-center ">
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
+              <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatum non recusandae eos, consequatur blanditiis dolorem quae ipsam quis incidunt nobis repudiandae exercitationem accusantium nostrum repellendus alias tenetur
               iste minima aliquid rerum porro laboriosam et? Officiis totam repellendus ea ratione consectetur ipsum nihil culpa temporibus vel nobis facere, est dolor.
-            </p>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-       <!-- modal -->
       
       <!-- Modal -->
       <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true fixed-top">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title justify-content-center" id="staticBackdropLabel">Profil</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body bg-grey">
-              <div class="row justify-content-evenly fs-5 ">
-                <div class="col-md-6">
-                  <div class="row justify-content-center">
-                    <div class="col-5">
-                      <br> Nama 
-                      <br> Alamat 
-                      <br> Tempat, Tanggal Lahir
-                      <br> Jenis Kelamin 
-                      <br> Agama 
-                      <br> Status 
+              <div class="row justify-content-center fs-5 ">
+                <div class="col-md">
+                  <div class="row justify-content-center text-lg-center">
+                    <div class="col">
+                      <br> Nama                     : Gilang Kumara 
+                      <br> Alamat                   : Gunung Sindur Bogor
+                      <br> Tempat, Tanggal Lahir    : Pemalang, 29 September 1997
+                      <br> Jenis Kelamin            : Laki-Laki
+                      <br> Agama                    : Islam 
+                      <br> Status                   : Menikah 
+                      <br> Hobi                     : Olahraga, Menonton, Membaca, Jalan-jalan
                     </div>
-                    <div class="col-7">
+                    <!-- <div class="col-7">
                       <br> : Gilang Kumara 
                       <br> : Gunung Sindur Bogor 
                       <br> : Pemalang, 29 September 1997
                       <br> : Laki-Laki
                       <br> : Islam 
                       <br> : Menikah 
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -144,7 +142,7 @@ data-aos-duration="1500">
            </div>
          </div>
          <div class="row justify-content-center">
-           <div class="col-md">
+           <div class="col-md-12">
             <table class="table" data-aos="zoom-in-up" data-aos-duration="3000"  data-aos-delay="500">
               <thead>
                 <tr class="text-center">
@@ -327,7 +325,7 @@ data-aos-duration="1500">
          </div>
        </div>
        <div class="row">
-         <div class="col-sm-4 mb-3">
+         <div class="col-md-4 mb-3">
           <div class="card" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="300">
             <img src="projek/1.jpg"card-img-top" alt="projek1">
             <div class="card-body">
@@ -335,7 +333,7 @@ data-aos-duration="1500">
             </div>
           </div>
          </div>
-         <div class="col-sm-4 mb-3">
+         <div class="col-md-4 mb-3">
           <div class="card" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="500">
             <img src="projek/2.jpg"card-img-top" alt="projek2">
             <div class="card-body">
@@ -343,7 +341,7 @@ data-aos-duration="1500">
             </div>
           </div>
          </div>
-         <div class="col-sm-4 mb-3">
+         <div class="col-md-4 mb-3">
           <div class="card" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="700">
             <img src="projek/3.jpg"card-img-top" alt="projek3">
             <div class="card-body">
@@ -359,12 +357,12 @@ data-aos-duration="1500">
    <section id="contact">
      <div class="container">
        <div class="row text-center mb-2">
-         <div class="col border-bottom" data-aos="fade-down" data-aos-duration="3000" data-aos-offset="300">
+         <div class="col-md-12 border-bottom" data-aos="fade-down" data-aos-duration="3000" data-aos-offset="300">
            <H2>Contact Me</H2>
          </div>
        </div>
        <div class="row justify-content-center text-center border-bottom">
-        <div class="col" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="300">
+        <div class="col-md-4" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="300">
           <ul>
             <li class="fb" style="--clr: #1872f2;">
               <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -372,7 +370,7 @@ data-aos-duration="1500">
             </li>
           </ul>
         </div>
-        <div class="col " data-aos="flip-left" data-aos-duration="3000" data-aos-delay="500">
+        <div class="col-md-4 " data-aos="flip-left" data-aos-duration="3000" data-aos-delay="500">
           <ul class="contact"> 
              <li class=" instagram contact" style="--clr:#c32aa3;">
                 <a href="#"><i class="fa-brands fa-instagram"></i>
@@ -381,7 +379,7 @@ data-aos-duration="1500">
               </li> 
           </ul>
         </div>
-        <div class="col" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="700">
+        <div class="col-md-4" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="700">
          <ul>
                   <li class="wa" style="--clr:#25d366">
               <a href="#"><i class="fa-brands fa-whatsapp"></i>
@@ -393,7 +391,7 @@ data-aos-duration="1500">
         </div>
 
         <div class="row text-center mb-2 mt-5">
-          <div class="col-md" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
+          <div class="col-md-12" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
             <H2 class="border-bottom">Or</H2>
           </div>
         </div>
@@ -410,8 +408,8 @@ data-aos-duration="1500">
 
       <div class="collapse" id="collapseExample">
         <div class="card card-body">
-          <div class="row justify-content-center">
-            <div class="col-md-10 mb-3">
+          <div class="row justify-content-center text-start">
+            <div class="col-md-12 mb-3">
               <div class="alert alert-success alert-dismissible fade show  my-alert d-none" role="alert">
                 <strong style="color: black;">Terimakasih</strong> 
                 <p>Pesan Anda Sudah Kami Terima</p>
@@ -447,7 +445,7 @@ data-aos-duration="1500">
    
 
    <!-- Footer -->
-   <footer class="text-white text-center pb-3 pt-2">
+   <footer class="text-white text-center pb-3 pt-2 bg-primary ">
      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by  <a href="https://www.instagram.com/gilang_kumara29/" class="text-white fs-bold">Gilang Kumara</a></p>
    </footer>
 

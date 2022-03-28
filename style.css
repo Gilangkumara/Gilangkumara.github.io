@@ -3,12 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-size: cover;
+}
 
 .jumbotron {
   padding: 10rem;
   background-color: rgb(253, 165, 92);
-  opacity: 0.8;
-  filter: alpha(opacity=60);
+  background-size: cover;
+}
+.jumbotron .transparant {
+  background: rgba(0, 0, 0, 0.5);
 }
 .nama {
   color: white;
@@ -46,11 +51,9 @@ h1 {
   background-color: rgb(233, 245, 206);
   padding-top: 7rem;
 }
-footer {
-  background-color: rgb(247, 129, 34);
-}
 section {
   padding-top: 5rem;
+  display: block;
 }
 .instagram:hover a {
   filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 30px var(--clr)) drop-shadow(0 0 50px var(--clr));
@@ -100,11 +103,11 @@ ul li {
   font-size: 1.1em;
 }
 .nav-item a {
-  color: white;
+  color: rgb(224, 88, 88);
 }
-.nav-item a:hover {
-  background-color: chocolate;
-  color: black;
+.active:hover {
+  color: rgb(255, 0, 0);
+  font-size: 1em;
 }
 .btn:hover {
   background-color: rgb(224, 88, 88);
