@@ -43,6 +43,8 @@ h1 {
 }
 #education {
   background-color: rgb(253, 165, 92);
+  width: 100%;
+  overflow: auto;
 }
 #about {
   padding-top: 7rem;
@@ -50,6 +52,8 @@ h1 {
 #projects {
   background-color: rgb(233, 245, 206);
   padding-top: 7rem;
+  width: 100%;
+  
 }
 section {
   padding-top: 5rem;
